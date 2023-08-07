@@ -13,9 +13,9 @@ body {
 
 .piano{
     background-color: #121212;
-    width: 1000px;
+    width: 1200px;
     height: 400px;
-    margin: 100px auto 0;
+    margin: 200px auto 0;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -95,6 +95,7 @@ body {
 .key span{
     position: absolute;
     font-weight: 600;
+    transition-duration: 300ms;
 }
 
 .key{
@@ -128,4 +129,14 @@ body {
 
 .piano__keys .white:nth-child(29){
     margin-right: 20px;
+}
+
+.black--pressed{
+    background:linear-gradient(#222, black);
+    border-Bottom: none;
+    height: 148px;
+}
+
+.disabled-keys span{
+    opacity: 0;
 }
